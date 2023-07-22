@@ -21,20 +21,30 @@
 	padding-bottom: 10rem;
 	margin-top: -2rem;
 }
+#tentang i {
+	font-size: 4rem;
+	margin: auto;
+}
+
 #project{
 	background-color:  #141d2b;
-	padding-bottom:5rem;
+	/* padding-bottom:5rem; */
 }
 .gelombang_02{
 	margin-bottom:-5rem;
 }
 .gelombang_03{
-	margin-bottom:-30rem;
+	
+	position:absolute;
 	
 }
 
 #kontak{
 	/* margin-top:rem; */
-	padding-top:15rem;
+	padding-top:10rem;
 	padding-bottom:5rem;
+	
+	
+	
+	
 }

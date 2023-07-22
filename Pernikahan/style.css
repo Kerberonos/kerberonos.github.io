@@ -1,0 +1,144 @@
+/*style.css*/
+
+:root {
+	
+	/*
+	 warna hijau : #9fef00;
+	 warna hitam : #141d2b;
+	 warna putih : #a4b1cd;
+	*/
+	
+	--hijau: #9fef00;
+	--putih: #a4b1cd;
+	--pink: #f14e95;
+	--bg: #141d2b;
+	--shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+body 
+{ 
+	font-size: 1.2rem;
+	font-family: 'Work Sans', sans-serif;
+	min-height: 2000px;
+}
+
+.hero::before
+{
+	content :'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(img/DSC_0491.JPG);
+	background-size: cover;
+	z-index: -1;
+}
+
+.hero {
+	position: relative;
+	min-height: 100vh; /*full satu layar*/
+	/* background-color: var(--bg); */
+}
+
+.hero h1, .hero h4, .hero p
+{
+	text-shadow: var(--shadow);
+}
+
+.hero h1 {
+	font-family: "Sacramento", cursive;
+	font-size: 6rem;
+}
+
+.hero h4 {
+	font-size: 1.6rem;
+}
+
+.hero a {
+	color: var(--pink);
+	background-color: white;
+	box-shadow: var(--shadow);
+}
+.hero a:hover{
+	background-color: var(--pink);
+	color: white;
+}
+#isi{
+	padding-top:5rem;
+}
+
+.tombol{
+	color: var(--pink);
+	background-color: white;
+	box-shadow: var(--shadow);
+}
+
+.tombol:hover{
+	background-color: var(--pink);
+	color: white;
+}
+
+#akhir{
+	padding-bottom:5rem;
+}
+
+#akhir h1, #akhir h2, #akhir h3{
+	/* text-shadow: var(--shadow); */
+	padding-top:3rem;
+}
+
+#akhir h1{
+	font-size:3rem;
+}
+
+#akhir h2{
+	font-size:7rem;
+	font-family:Sacramento;
+}
+
+#akhir h3{
+	font-size:1.6rem;
+}
+
+/* Media Query */
+
+/* Laptop */
+@media (max-width: 992px)
+{
+	html
+	{
+		font-size: 75%;
+	}
+	
+}
+
+
+/* Tablet */
+@media (max-width: 768px)
+{
+	html{
+		font-size: 60%;
+	}
+	.simply-countdown>.simply-section
+	{
+		padding:60px;
+		margin: 5px;
+	}
+}
+
+
+
+
+/* Hp */
+@media (max-width: 576px)
+{
+	html{
+		font-size: 50%;
+	}
+	.simply-countdown>.simply-section
+	{
+		padding:45px;
+		margin: 3px;
+	}
+}
